@@ -20,14 +20,14 @@ class GameObject {
     this.htmlElement.style[styleName] = value;
   }
 
-  playAnimation () {
+  play () {
     this.animationIntervalReference = setInterval(() => {
       this.htmlElement.src = this.frameList[this.frameIndex];
       this.frameIndex = this.frameIndex >= this.frameList.length - 1 ? 0 : this.frameIndex + 1;
     }, this.velocity);
   }
 
-  pauseAnimation () {
+  stop () {
     clearInterval(this.animationIntervalReference);
   }
 }
