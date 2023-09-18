@@ -22,7 +22,7 @@ class Player extends GameObject {
       let playerBottomValue = this.playerBottomBaseValue;
       let isGoingUp = true;
   
-      this.pauseAnimation();
+      this.stop();
       
       const jumpAnimation = setInterval(() => {
         movePlayerBottom(playerBottomValue);
@@ -31,7 +31,7 @@ class Player extends GameObject {
         if (playerBottomValue >= this.jumpHeight + this.playerBottomBaseValue) isGoingUp = false;
         if (playerBottomValue <= this.playerBottomBaseValue) {
           clearInterval(jumpAnimation);
-          this.playAnimation();
+          this.play();
           this.isJumping = false;
         }
       }, this.jumpVelocity);
