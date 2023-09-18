@@ -2,3 +2,5 @@ const buttonStart = new Button("./assets/button-start/button-start.png", "", fun
     start()
     buttonStart.htmlElement.remove()
 })
+
+
