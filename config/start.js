@@ -1,6 +1,6 @@
 function start () {
     configBackground();
     configGround();
-    configPlayer();
+    configPlayers();
     configObstacles();
 };

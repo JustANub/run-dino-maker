@@ -1,3 +1,5 @@
+globalThis.players = [];
+
 function configPlayers() {
-  
+    
 }

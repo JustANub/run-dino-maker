@@ -7,7 +7,7 @@ class Player extends GameObject {
     });
 
     this.jumpHeight = jumpHeight;
-    this.jumpVelocity = jumpVelocity;
+    this.jumpVelocity = 100 / jumpVelocity;
     this.isJumping = false;
     this.playerBottomBaseValue = Number(globalThis.ground.getStyles('height'));
     this.setStyles('bottom', this.playerBottomBaseValue + 'px');
