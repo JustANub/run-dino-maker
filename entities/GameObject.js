@@ -9,7 +9,7 @@ class GameObject {
     this.frameIndex = 0;
 
     containerGameEl.appendChild(this.htmlElement);
-    this.playAnimation();
+    this.play();
   }
   
   getStyles (styleName) {
