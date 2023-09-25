@@ -5,7 +5,7 @@ class GameObject {
 
     this.frameList = frameList;
     this.animationIntervalReference;
-    this.velocity = runVelocity;
+    this.velocity = 100 / runVelocity;
     this.frameIndex = 0;
 
     containerGameEl.appendChild(this.htmlElement);

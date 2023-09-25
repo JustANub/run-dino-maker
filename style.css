@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&display=swap');
+
 * {
   margin: 0;
   border: 0;
@@ -59,4 +61,13 @@ game {
   height: 50px;
  
   position: absolute;
+}
+
+.points {
+  font-family: 'Press Start 2P';
+  color: rgb(68, 68, 68);
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }

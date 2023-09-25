@@ -3,4 +3,5 @@ function start () {
     configGround();
     configPlayers();
     configObstacles();
+    configPoints();
 };
